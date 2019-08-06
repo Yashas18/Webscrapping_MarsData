@@ -1,0 +1,162 @@
+/* Add a dark background color with a little bit see-through */ 
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 15px !important;
+  letter-spacing: 3px;
+  opacity:10;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+  color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+  color: #fff ;
+  background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  color: #fff !important;
+  background-color: #555
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #29292c;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+}
+
+
+h3 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 3px; 
+  font-size: 20px;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+h4 {
+  margin: 0px 0 0px 0;
+  letter-spacing: 3px; 
+  font-size: 20px;
+  color: #bdbdbd;
+  text-align: left;
+}
+
+h1{
+  margin: 5px 0 5px 0;
+  letter-spacing: 3px; 
+  font-size: 30px;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+h2{
+  margin: 5px 0 5px 0;
+  letter-spacing: 3px; 
+  font-size: 25px;
+  text-align: left;
+}
+
+/* Remove rounded borders on input fields */
+.form-control {
+  border-radius: 0;
+}
+
+/* Disable the ability to resize textareas */
+textarea {
+  resize: none;
+}
+
+.container {
+  padding: 40px 40px;
+}
+
+<script>
+var x = www.google.com;
+
+</script>
+
+table {
+  table-layout: fixed;
+  width: 100%; 
+  table-layout: fixed;  
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+table th {
+  color: white;
+  background-color: #2d2d30;
+}
+
+
+.bg-1 { 
+    background-color: #2d2d30; /* Green */
+    color: #bdbdbd;
+  }
+  
+  
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
